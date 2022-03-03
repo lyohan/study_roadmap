@@ -30,7 +30,7 @@ const Detail: NextPage = () => {
         const clientWidth = sliderBox?.current?.clientWidth
         console.log('sadfasfd', sliderBox.current.scrollLeft , sliderBox.current.scrollWidth)
         // let index = Math.round((sliderBox.current.scrollLeft / sliderBox.current.scrollWidth)) * 3
-        let index = sliderBox.current.scrollLeft / (332 - ((clientWidth - 300) / 2))
+        let index = Math.round(sliderBox.current.scrollLeft / (332 - ((clientWidth - 300) / 2)))
         setActiveLoadMap(index)
         // if (sliderBox.current.scrollLeft < 300) {
         //   setActiveLoadMap(0)
