@@ -43,7 +43,7 @@ const Detail: NextPage = () => {
         // if (sliderBox.current.scrollLeft > 600) {
         //   setActiveLoadMap(2)
         // }
-      }, 1000))
+      }, 500))
     }
     // console.log('asdf111f', sliderBox?.current?.scrollLeft)
   }, [])
