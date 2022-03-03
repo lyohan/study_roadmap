@@ -21,6 +21,8 @@ const Home: NextPage = () => {
         </button>
       )
     })
+  
+  const categoryDetailCopy: any = { ...categoryDetail }
   return (
     <div className="mt-10 ml-10">
       <header>
@@ -31,8 +33,8 @@ const Home: NextPage = () => {
         <section className="mt-6">
           {acticeCategory && (
             <>
-              <h3>{categoryDetail[acticeCategory].title}</h3>
-              <p>{categoryDetail[acticeCategory].description}</p>
+              <h3>{categoryDetailCopy[acticeCategory].title}</h3>
+              <p>{categoryDetailCopy[acticeCategory].description}</p>
             </>
           )}
           <section className="mt-6">

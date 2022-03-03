@@ -22,7 +22,7 @@ const Detail: NextPage = () => {
   }
 
   const [activeRoadMap, setActiveLoadMap] = useState(0)
-	const sliderBox = useRef(null)
+	const sliderBox = useRef<any>(null)
   useEffect(() => {
     if (sliderBox?.current) {
       
@@ -55,7 +55,7 @@ const Detail: NextPage = () => {
       </div>
       <div className="space-x-3">
         <button onClick={() => {
-						sliderBox?.current?.scrollLeft = 0
+						sliderBox.current.scrollLeft = 0
 						// sliderBox?.current?.scrollLeft = Math.floor(sliderBox?.current?.scrollWidth * (1 / 3))
 					}}
           className={activeRoadMap === 0 ? 'bg-yellow-400' : ''}
@@ -65,7 +65,7 @@ const Detail: NextPage = () => {
 						const clientWidth = sliderBox?.current?.clientWidth
 						// console.log('asdf', clientWidth - 32 - ((clientWidth - 300) / 2))
             console.log('button one', 332 - ((clientWidth - 300) / 2))
-						sliderBox?.current?.scrollLeft = 332 - ((clientWidth - 300) / 2)
+						sliderBox.current.scrollLeft = 332 - ((clientWidth - 300) / 2)
             // sliderBox?.current?.scrollLeft = 300
             // sliderBox?.current?.scrollLeft = Math.floor(sliderBox?.current?.scrollWidth * (2 / 3))
 					}}
@@ -73,7 +73,7 @@ const Detail: NextPage = () => {
           >two</button>
         <button onClick={() => {
 						const clientWidth = sliderBox?.current?.clientWidth
-						sliderBox?.current?.scrollLeft = (332 - ((clientWidth - 300) / 2)) * 2
+						sliderBox.current.scrollLeft = (332 - ((clientWidth - 300) / 2)) * 2
             // sliderBox?.current?.scrollLeft = 600
             // sliderBox?.current?.scrollLeft = Math.floor(sliderBox?.current?.scrollWidth * (3 / 3))
 					}}
