@@ -1,0 +1,34 @@
+[
+	{
+		"id": "frontend",
+		"name": "Web Frontend"
+	},
+	{
+		"id": "backend",
+		"name": "Web Backend"
+	},
+	{
+		"id": "app",
+		"name": "APP"
+	},
+	{
+		"id": "metaverse",
+		"name": "Metaverse"
+	},
+	{
+		"id": "game",
+		"name": "Game"
+	},
+	{
+		"id": "ai",
+		"name": "AI & Data"
+	},
+	{
+		"id": "blockchain",
+		"name": "Blockchain"
+	},
+	{
+		"id": "cloud",
+		"name": "Cloud"
+	}
+]
