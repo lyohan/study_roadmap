@@ -53,6 +53,9 @@ const Detail: NextPage = () => {
         <h3>웹 프론트엔드 경로를 안내합니다.</h3>
         <h1>기초 학습</h1>
       </div>
+      <div>
+        <h1>{activeRoadMap}</h1>
+      </div>
       <div className="space-x-3">
         <button onClick={() => {
 						sliderBox.current.scrollLeft = 0
