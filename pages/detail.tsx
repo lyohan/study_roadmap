@@ -83,11 +83,11 @@ const Detail: NextPage = () => {
           className={activeRoadMap === 2 ? 'bg-yellow-400' : ''}
         >three</button>
       </div>
-      <div className="flex space-x-4 snap-mandatory snap-x overflow-x-scroll p-4"
+      <div className="flex m-4 space-x-4 snap-mandatory snap-x overflow-x-scroll"
 				ref={sliderBox}
 				style={{ scrollBehavior: 'smooth' }}
 			>
-        <div className="snap-center" style={{ width: 300 }}>
+        <div className="snap-center flex-shrink-0" style={{ width: 300 }}>
           <div
             className="bg-gray-200"
             style={{ width: 300, height: 275 }}
@@ -105,7 +105,7 @@ const Detail: NextPage = () => {
             style={{ width: 300, height: 275 }}
           ></div>
         </div>
-        <div className="snap-center" style={{ width: 300 }}>
+        <div className="snap-center flex-shrink-0" style={{ width: 300 }}>
           <div
             className="bg-gray-200"
             style={{ width: 300, height: 275 }}
@@ -123,7 +123,7 @@ const Detail: NextPage = () => {
             style={{ width: 300, height: 275 }}
           ></div>
         </div>
-        <div className="snap-center" style={{ width: 300 }}>
+        <div className="snap-center flex-shrink-0" style={{ width: 300 }}>
           <div
             className="bg-gray-200"
             style={{ width: 300, height: 275 }}
